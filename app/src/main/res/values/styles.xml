@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#DCACCC</item>
+        <item name="colorPrimaryDark">#DCABB8</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#2962FF</item>
+        <item name="colorError">#F44336</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+
+</resources>

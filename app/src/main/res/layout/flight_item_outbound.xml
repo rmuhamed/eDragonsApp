@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/flight_item">
+
+    <ImageView
+        android:id="@+id/flight_item_outbound_airline_image"
+        android:layout_width="109dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_normal"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_airline_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_normal"
+        android:layout_marginEnd="@dimen/dimen_normal"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/flight_item_outbound_airline_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dragon" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginBottom="@dimen/dimen_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/flight_item_outbound_airline_image"
+        app:layout_constraintTop_toBottomOf="@id/flight_item_outbound_origin"
+        tools:text="Destination" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_departure_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginEnd="@dimen/dimen_normal"
+        app:layout_constraintEnd_toStartOf="@+id/flight_item_outbound_departure_time"
+        app:layout_constraintTop_toBottomOf="@id/flight_item_outbound_arrival_date"
+
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_departure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginEnd="@dimen/dimen_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight_item_outbound_arrival_time"
+        tools:text="Hour" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_arrival_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_normal"
+        android:layout_marginEnd="@dimen/dimen_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight_item_outbound_airline_name"
+        tools:text="Hour" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_arrival_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_normal"
+        android:layout_marginEnd="@dimen/dimen_normal"
+        app:layout_constraintEnd_toStartOf="@id/flight_item_outbound_arrival_time"
+        app:layout_constraintTop_toBottomOf="@id/flight_item_outbound_airline_name"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/flight_item_outbound_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_normal"
+        app:layout_constraintStart_toEndOf="@id/flight_item_outbound_airline_image"
+        app:layout_constraintTop_toBottomOf="@id/flight_item_outbound_airline_name"
+        tools:text="Origin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
