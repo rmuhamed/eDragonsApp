@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        gradle_plugin_version = '3.5.0-alpha11'
+        gradle_plugin_version = '3.5.0-alpha12'
         materialcomponents_version = '1.0.0'
         kotlin_version = '1.3.21'
         retrofit_version = '2.5.0'
